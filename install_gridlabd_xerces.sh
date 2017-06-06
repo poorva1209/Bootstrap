@@ -10,13 +10,11 @@ export GLD_INSTALL=$GRIDAPPSD_INSTALL/builds/test
 export FNCS_INSTALL=$GRIDAPPSD_INSTALL/builds/test
 
 #----------------
-# gridlab-d setup pt1
+# xerces setup
 #----------------
-cd $GRIDAPPSD_INSTALL/sources
-git clone https://github.com/gridlab-d/gridlab-d.git -b release/RC4.0 --single-branch
-
-
-
-
-
-
+cd $GRIDAPPSD_INSTALL/sources/gridlab-d/third_party
+tar -xzf xerces-c-3.1.1.tar.gz
+cd xerces-c-3.1.1
+./configure
+make
+make install
