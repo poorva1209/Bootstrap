@@ -1,10 +1,10 @@
 export GRIDAPPSD_INSTALL=/home/gridappsd/gridappsd_project
 
-mkdir -p gridappsd_project
+mkdir -p $GRIDAPPSD_INSTALL
 
-mkdir -p gridappsd_project/sources
+mkdir -p $GRIDAPPSD_INSTALL/sources
 
-mkdir -p gridappsd_project/builds
+mkdir -p $GRIDAPPSD_INSTALL/builds
 
 #----------------
 # gridlab-d setup

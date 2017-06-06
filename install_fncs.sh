@@ -1,10 +1,10 @@
 export GRIDAPPSD_INSTALL=/home/gridappsd/gridappsd_project
 
-mkdir -p gridappsd_project
+mkdir -p $GRIDAPPSD_INSTALL
 
-mkdir -p gridappsd_project/sources
+mkdir -p $GRIDAPPSD_INSTALL/sources
 
-mkdir -p gridappsd_project/builds
+mkdir -p $GRIDAPPSD_INSTALL/builds
 
 #----------------
 # fncs setup
@@ -18,8 +18,8 @@ cd zeromq-3.2.4
 ./configure --prefix=$FNCS_INSTALL
 make
 make install
-rm zeromq-3.2.4.tar.gz
-rm -r zeromq-3.2.4
+rm /tmp/zeromq-3.2.4.tar.gz
+rm -r /tmp/zeromq-3.2.4
 
 cd /tmp
 wget http://download.zeromq.org/czmq-3.0.0-rc1.tar.gz
@@ -28,8 +28,8 @@ cd czmq-3.0.0
 ./configure --prefix=$FNCS_INSTALL --with-libzmq=$FNCS_INSTALL
 make
 make install
-rm czmq-3.0.0-rc1.tar.gz
-rm -r czmq-3.0.0
+rm /tmp/czmq-3.0.0-rc1.tar.gz
+rm -r /tmp/czmq-3.0.0
 
 cd $GRIDAPPSD_INSTALL/sources
 git clone https://github.com/FNCS/fncs.git
