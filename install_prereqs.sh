@@ -14,11 +14,7 @@ pip install --upgrade pip
 pip install stomp.py
 
 
-mkdir -p gridappsd_project
 
-mkdir -p gridappsd_project/sources
-
-mkdir -p gridappsd_project/builds
 
 export GRIDAPPSD_INSTALL=/home/gridappsd/gridappsd_project
 

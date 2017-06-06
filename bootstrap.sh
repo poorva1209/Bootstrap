@@ -2,8 +2,6 @@
 
 #bootstrap - launch this script as root   
 
-chmod a+x *.sh
-
 #----------------
 # prereq setup
 #----------------
@@ -12,14 +10,14 @@ chmod a+x *.sh
 #----------------
 # fncs setup
 #----------------
-su gridappsd -c "./install_fncs.sh"
+su gridappsd -p -c "./install_fncs.sh"
 
 #----------------
 # gridlabd setup
 #----------------
-su gridappsd -c "./install_gridlabd.sh"
+su gridappsd -p -c "./install_gridlabd.sh"
 
 #----------------
 # GOSS GridAPPS-D  and Viz setup
 #----------------
-su gridappsd -c "./install_fncs.sh"
+su gridappsd -p -c "./install_fncs.sh"

@@ -1,3 +1,11 @@
+export GRIDAPPSD_INSTALL=/home/gridappsd/gridappsd_project
+
+mkdir -p gridappsd_project
+
+mkdir -p gridappsd_project/sources
+
+mkdir -p gridappsd_project/builds
+
 #----------------
 # goss gridapps-d setup
 #----------------

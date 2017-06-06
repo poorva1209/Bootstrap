@@ -1,3 +1,11 @@
+export GRIDAPPSD_INSTALL=/home/gridappsd/gridappsd_project
+
+mkdir -p gridappsd_project
+
+mkdir -p gridappsd_project/sources
+
+mkdir -p gridappsd_project/builds
+
 #----------------
 # fncs setup
 #----------------
@@ -17,7 +25,7 @@ cd /tmp
 wget http://download.zeromq.org/czmq-3.0.0-rc1.tar.gz
 tar -xzf czmq-3.0.0-rc1.tar.gz
 cd czmq-3.0.0
-./configure –prefix=$FNCS_INSTALL –with-libzmq=$FNCS_INSTALL
+./configure --prefix=$FNCS_INSTALL --with-libzmq=$FNCS_INSTALL
 make
 make install
 rm czmq-3.0.0-rc1.tar.gz
@@ -26,7 +34,7 @@ rm -r czmq-3.0.0
 cd $GRIDAPPSD_INSTALL/sources
 git clone https://github.com/FNCS/fncs.git
 cd fncs
-./configure –prefix=$FNCS_INSTALL –with-zmq=$FNCS_INSTALL
+./configure --prefix=$FNCS_INSTALL --with-zmq=$FNCS_INSTALL
 make
 make install
 
