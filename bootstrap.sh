@@ -1,6 +1,3 @@
-#prereq should have a user called gridappsd that everthing is expected to run under
-
-#bootstrap - launch this script as root   
 
 #----------------
 # prereq setup
@@ -10,14 +7,16 @@
 #----------------
 # fncs setup
 #----------------
-su gridappsd -p -c "./install_fncs.sh"
+su gridappsd -c "./install_fncs.sh"
 
 #----------------
 # gridlabd setup
 #----------------
-su gridappsd -p -c "./install_gridlabd.sh"
+su gridappsd -c "./install_gridlabd.sh"
+./install_gridlabd_xerces.sh
+su gridappsd -c "./install_gridlabd_pt2.sh"
 
 #----------------
 # GOSS GridAPPS-D  and Viz setup
 #----------------
-su gridappsd -p -c "./install_fncs.sh"
+su gridappsd -c "./install_goss_gridappsd.sh"

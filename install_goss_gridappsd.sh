@@ -13,12 +13,15 @@ cd $GRIDAPPSD_INSTALL/sources
 
 git clone https://github.com/GRIDAPPSD/GOSS-GridAPPS-D.git
 cd GOSS-GridAPPS-D
+chmod a+x build-goss-test.sh
+chmod a+x run-goss-test.sh
 ./build-goss-test.sh
+mkdir -p $GRIDAPPSD_INSTALL/builds/test/log
 
 #----------------
 # mysql setup
 #----------------
-
+#TODO
 
 
 #----------------
@@ -26,4 +29,8 @@ cd GOSS-GridAPPS-D
 #----------------
 cd $GRIDAPPSD_INSTALL/sources
 git clone https://github.com/GRIDAPPSD/viz.git
+npm install express
+npm install ejs
+
+
 

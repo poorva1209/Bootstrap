@@ -8,7 +8,7 @@
 #----------------
 apt update -y 
 
-apt install -y vim git mysql-server automake default-jdk g++ gcc python python-pip libtool apache2 gradle 
+apt install -y vim git mysql-server automake default-jdk g++ gcc python python-pip libtool apache2 gradle nodejs-legacy npm
 
 pip install --upgrade pip
 pip install stomp.py
