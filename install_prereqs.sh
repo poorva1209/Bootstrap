@@ -12,7 +12,7 @@ apt install -y vim git automake default-jdk g++ gcc python python-pip libtool ap
 
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password gridappsd1234'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password gridappsd1234'
-apt install mysql-server
+apt install -y mysql-server
 
 pip install --upgrade pip
 pip install stomp.py

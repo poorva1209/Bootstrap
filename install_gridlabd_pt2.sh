@@ -16,7 +16,7 @@ cd $GRIDAPPSD_INSTALL/sources/gridlab-d
 autoreconf -if
 ./configure --prefix=$GLD_INSTALL --with-fncs=$FNCS_INSTALL --enable-silent-rules 'CFLAGS=-g -O0 -w' 'CXXFLAGS=-g -O0 -w' 'LDFLAGS=-g -O0 -w'
 make
-install
+make install
 
 export PATH=$PATH:$GLD_INSTALL/bin 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$FNCS_INSTALL/lib
