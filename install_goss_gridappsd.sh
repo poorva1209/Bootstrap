@@ -22,7 +22,7 @@ mkdir -p $GRIDAPPSD_INSTALL/builds/test/log
 #----------------
 # mysql setup
 #---------------- 
-mysql -u admin -pgridappsd1234 < $pwd/gridappsd_mysql_dump.sql
+mysql -u root -pgridappsd1234 < $pwd/gridappsd_mysql_dump.sql
 
 
 #----------------
