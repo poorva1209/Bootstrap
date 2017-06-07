@@ -1,4 +1,5 @@
 export GRIDAPPSD_INSTALL=/home/gridappsd/gridappsd_project
+pwd= `pwd`
 
 mkdir -p $GRIDAPPSD_INSTALL
 
@@ -20,8 +21,8 @@ mkdir -p $GRIDAPPSD_INSTALL/builds/test/log
 
 #----------------
 # mysql setup
-#----------------
-#TODO
+#---------------- 
+mysql -u admin -pgridappsd1234 < $pwd/gridappsd_mysql_dump.sql
 
 
 #----------------
