@@ -17,6 +17,10 @@ apt install -y mysql-server
 pip install --upgrade pip
 pip install stomp.py
 
+npm install -g express
+npm install -g ejs
+npm install -g typescript
+npm install -g typings
 
 
 

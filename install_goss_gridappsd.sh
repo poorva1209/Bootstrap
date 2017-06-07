@@ -29,8 +29,7 @@ mysql -u root -pgridappsd1234 < /tmp/gridappsd_mysql_dump.sql
 #----------------
 cd $GRIDAPPSD_INSTALL/sources
 git clone https://github.com/GRIDAPPSD/viz.git
-npm install express
-npm install ejs
-
+cd viz
+npm install
 
 
